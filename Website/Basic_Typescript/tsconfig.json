@@ -1,0 +1,20 @@
+{
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "compilerOptions": {
+        "outDir": "./bin",
+        "sourceMap": true,
+        
+        "baseUrl": ".",
+        "paths": {
+            "@lib/*": ["src/lib/*"],
+            "@models/*": ["src/models/*"],
+            "@app/*": ["src/app/*"],
+            "@comp/*": ["src/components/*"],
+        }
+    }
+}
